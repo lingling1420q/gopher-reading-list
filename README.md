@@ -1,4 +1,4 @@
-# Gopher Reading List [![Build Status](https://travis-ci.org/enocom/gopher-reading-list.svg?branch=master)](https://travis-ci.org/enocom/gopher-reading-list)
+# Gopher Reading List [![Build](https://github.com/enocom/gopher-reading-list/workflows/CI/badge.svg)](https://github.com/enocom/gopher-reading-list/actions?query=workflow%3ACI+branch%3Amain+)
 
 Here is a reading list of blog posts about [Go](https://golang.org). It aspires
 to include only the most useful and relevant material that anyone writing Go
@@ -9,7 +9,9 @@ entries.
 
 Go is growing fast and so are the number of blog posts about it. If an
 interested reader knows of a great post not on this list, please open an issue
-with a link to the post.
+with a link to the post. Not every blog post linked in an issue will make its way
+into the list. Nonetheless, the [issue list](https://github.com/enocom/gopher-reading-list/issues)
+(both open and closed) is a good source of additional reading material.
 
 **NOTE:** Any new additions will need to replace
 something else on the list to keep it at a fixed length.
@@ -17,6 +19,7 @@ something else on the list to keep it at a fixed length.
 ## Start Here
 
 - [Why should you learn Go?](https://medium.com/@kevalpatel2106/why-should-you-learn-go-f607681fad65)
+- [An Intro to Go for non-Go developers](https://benhoyt.com/writings/go-intro/)
 - [How to Write Go Code](https://golang.org/doc/code.html)
 - [A Tour of Go](https://tour.golang.org/welcome/1)
 - [Frequently Asked Questions](https://golang.org/doc/faq)
@@ -30,15 +33,12 @@ something else on the list to keep it at a fixed length.
 - [Understand Go pointers in less than 800 words or your money back](https://dave.cheney.net/2017/04/26/understand-go-pointers-in-less-than-800-words-or-your-money-back)
 - [Channel Axioms](https://dave.cheney.net/2014/03/19/channel-axioms)
 - [Golang channels tutorial](http://guzalexander.com/2013/12/06/golang-channels-tutorial.html)
-- [(Now You're) Thinking With Channels](http://blog.mergermarket.it/now-youre-thinking-with-channels/)
-- [Go Defer Simplified with Practical Visuals](https://blog.learngoprogramming.com/golang-defer-simplified-77d3b2b817ff)
 - [Understanding Go panic output](https://joeshaw.org/understanding-go-panic-output/)
-- [How to avoid Go gotchas](https://divan.github.io/posts/avoid_gotchas/)
 - [Common Gotchas in Go](https://deadbeef.me/2018/01/go-gotchas)
 - [50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
 - [Slices from the ground up](https://dave.cheney.net/2018/07/12/slices-from-the-ground-up)
 - [6 Tips for Using Strings in Go](https://www.calhoun.io/6-tips-for-using-strings-in-go/)
-- [Unofficial Go FAQ](http://www.tapirgames.com/blog/golang-unofficial-faq)
+- [Go Defer Simplified with Practical Visuals](https://blog.learngoprogramming.com/golang-defer-simplified-77d3b2b817ff)
 
 ### Worth reading, again and again
 
@@ -63,6 +63,7 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 - [Idiomatic Go](https://dmitri.shuralyov.com/idiomatic-go)
 - [Error handling and Go](https://blog.golang.org/error-handling-and-go)
 - [Go's Error Handling is Elegant](https://davidnix.io/post/error-handling-in-go/)
+- [Working with Errors in Go 1.13](https://blog.golang.org/go1.13-errors)
 - [When Should I Use One Liner if...else Statements in Go?](https://www.calhoun.io/one-liner-if-statements-with-errors/)
 - [Five Suggestions for Setting up a Go project](https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project)
 - [The One with the Directory Structure and Manual Wiring](https://www.elliotdwright.com/2018/02/27/how-i-structure-some-of-my-projects/)
@@ -92,7 +93,6 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 
 - [Learning Go's Concurrency Through Illustrations](https://medium.com/@trevor4e/learning-gos-concurrency-through-illustrations-8c4aff603b3)
 - [Data races in Go(Golang) and how to fix them](https://www.sohamkamani.com/blog/2018/02/18/golang-data-race-and-how-to-fix-it/)
-- [Multithreading in Go - A Tutorial](https://pragmacoders.com/multithreading-go-tutorial/)
 - [Go’s append is not always thread safe](https://medium.com/@cep21/gos-append-is-not-always-thread-safe-a3034db7975)
 - [Golang channels tutorial](https://guzalexander.com/2013/12/06/golang-channels-tutorial.html)
 
@@ -100,6 +100,7 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 
 - [Introduction to Go modules](https://roberto.selbach.ca/intro-to-go-modules/)
 - [Using Go Modules](https://blog.golang.org/using-go-modules)
+- [Modules Part 01: Why And What](https://www.ardanlabs.com/blog/2019/10/modules-01-why-and-what.html)
 
 ## Intermediate
 
@@ -121,7 +122,6 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 - [Object Oriented Inheritance in Go](http://hackthology.com/object-oriented-inheritance-in-go.html)
 - [Error handling in Upspin](https://commandcenter.blogspot.com/2017/12/error-handling-in-upspin.html)
 - [Iterators in Go](https://ewencp.org/blog/golang-iterators/index.html)
-- [Stop writing broken Go libraries](https://0x46.net/thoughts/2018/12/29/go-libraries/)
 
 ### Concurrency
 
@@ -156,16 +156,15 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 - [Testing Your (HTTP) Handlers in Go](http://blog.questionable.services/article/testing-http-handlers-go/)
 - [Go test your tests in Go with go test](https://deadbeef.me/2018/05/go-test)
 - [Learn Go with tests](https://github.com/quii/learn-go-with-tests)
-- [Unit Testing Golang HTTP Middleware](https://medium.com/@PurdonKyle/unit-testing-golang-http-middleware-c7727ca896ea)
 - [Lesser-Known Features of Go Test](https://splice.com/blog/lesser-known-features-go-test/)
 - [When Writing Unit Tests, Don’t Use Mocks](https://sendgrid.com/blog/when-writing-unit-tests-dont-use-mocks/)
 
 ### Web
 
+- [Go for Cloud](https://rakyll.org/go-cloud/)
 - [Exposing Go on the Internet](https://blog.gopheracademy.com/advent-2016/exposing-go-on-the-internet/)
 - [The complete guide to Go net/http timeouts](https://blog.cloudflare.com/the-complete-guide-to-golang-net-http-timeouts/)
 - [HTTP(S) Proxy in Golang in less than 100 lines of code](https://medium.com/@mlowicki/http-s-proxy-in-golang-in-less-than-100-lines-of-code-6a51c2f2c38c)
-- [Deploying Go apps on Docker scratch images](https://weberc2.bitbucket.io/posts/golang-docker-scratch-app.html)
 - [Write a Kubernetes-ready service from zero step-by-step](https://blog.gopheracademy.com/advent-2017/kubernetes-ready-service/)
 - [A brief intro of TCP keep-alive in Go’s HTTP implementation](http://nanxiao.me/en/a-brief-intro-of-tcp-keep-alive-in-gos-http-implementation/)
 - [Go JSON Cookbook](https://eli.thegreenplace.net/2019/go-json-cookbook/)
@@ -183,6 +182,7 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 - [Writing a Data Mapper in Go without an ORM](http://www.meetspaceapp.com/2016/05/23/writing-a-data-mapper-in-go-without-an-orm.html)
 - [Practical Persistence in Go: Organising Database Access](http://www.alexedwards.net/blog/organising-database-access)
 - [How I write Go HTTP services after seven years](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
+- [Make resilient Go net/http servers using timeouts, deadlines and context cancellation](https://ieftimov.com/post/make-resilient-golang-net-http-servers-using-timeouts-deadlines-context-cancellation/)
 
 ### Tools
 
@@ -191,6 +191,7 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 - [Profiling Go Programs](https://blog.golang.org/profiling-go-programs)
 - [Go Tooling in Action](https://medium.com/google-cloud/go-tooling-in-action-eca6882ff3bc#.d9ob4wyj4)
 - [Using Go as a scripting language in Linux](https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/)
+- [Statically compiling Go programs](https://www.arp242.net/static-go.html)
 
 ### Trivia
 
@@ -205,13 +206,14 @@ See [Go Books](https://github.com/dariubs/GoBooks) for a longer list of books, b
 - [Profiling Go](http://www.integralist.co.uk/posts/profiling-go/)
 - [Five things that make Go fast](https://dave.cheney.net/2014/06/07/five-things-that-make-go-fast)
 - [Practical Go Benchmarks](https://stackimpact.com/blog/practical-golang-benchmarks/)
+- [Debugging Go Applications using Delve](https://golangbot.com/debugging-go-delve/)
 
 ### Language
 
+- [Working with Errors in Go 1.13](https://blog.golang.org/go1.13-errors)
 - [Golang: pass by pointer vs pass by value](http://goinbigdata.com/golang-pass-by-pointer-vs-pass-by-value/)
 - [There is no pass-by-reference in Go](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go)
 - [Variadic functions in Go](https://medium.com/golangspec/variadic-functions-in-go-13c33182b851)
-- [Crossing Streams: a Love Letter to io.Reader](http://jmoiron.net/blog/crossing-streams-a-love-letter-to-ioreader/)
 - [Function Types in Go (golang)](http://jordanorelli.com/post/42369331748/function-types-in-go-golang)
 - [research!rsc: Go Data Structures](https://research.swtch.com/godata)
 - [The Relationship Between Interfaces and Reflection](https://blog.gopheracademy.com/advent-2018/interfaces-and-reflect/)
